@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Guess Me.</h1>
+    </nav>
+    <header>
+        <h1>Game Instructions</h1>
+        <ul>
+            <li>Guess a number between 1 and 100.</li>
+            <li>You have 10 attempts to guess the correct number.</li>
+            <li>After each guess, you’ll get feedback indicating if your guess is too high or too low.</li>
+            <li>If you guess correctly within the attempts, you win! Otherwise, the game will reveal the correct number at the end.</li>
+        </ul>
+    </header>
+    
+    <div class="main-box">
+        <div class="container">
+    <form action="">
+<label for="GuessField"  id="guess">Guess a Number</label>
+<input type="text" id="guessInput" class="guess-Input">
+<input type="submit" id="guessSubmit" class="guess-Input" value="Submit Guess"  >
+    </form>
+    <div class="resultsection">
+        <p>Previous guess: <span class="pre-guess"></span></p>
+        <p>Remaining Guess: <span class="remain-guess">10</span></p>
+        <p class="dontknow"></p>
+    </div>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
